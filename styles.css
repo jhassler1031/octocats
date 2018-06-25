@@ -23,18 +23,30 @@ ul {
   width: 33%;
 }
 
+.octocat img {
+  /* adding border around main image */
+  border: 2px solid lightgray;
+}
+
 .image-footer {
 display: inline-block;
-
+width: 100%;
+height: 100%;
+vertical-align: middle;
+/* Add bottom bar using border */
+padding-bottom: 15px;
+border-bottom: 2px solid lightgray;
 }
 
 .image-caption {
 display: inline-block;
-
+color: gray;
 }
 
 .image-number {
-  float: left;
+height: 100%;
+vertical-align: middle;
+color: gray;
 }
 
 .authors {
@@ -50,8 +62,6 @@ display: inline-block;
 .authors img {
   border-radius: 10px;
 }
-
-
 
 .authors li {
   /* makes all author li's display inline */
