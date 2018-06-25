@@ -1,0 +1,60 @@
+* {
+-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.octodex {
+
+}
+
+.octocat {
+  /* Using inline block here to make the main images show horizontally.  Setting width
+  to control the size of the images. */
+  display: inline-block;
+  width: 33%;
+}
+
+.image-footer {
+display: inline-block;
+
+}
+
+.image-caption {
+display: inline-block;
+
+}
+
+.image-number {
+  float: left;
+}
+
+.authors {
+display: inline-block;
+
+}
+
+.authors a {
+width: 30px;
+display: inline-block;
+}
+
+.authors img {
+  border-radius: 10px;
+}
+
+
+
+.authors li {
+  /* makes all author li's display inline */
+  display: inline-block;
+
+}
