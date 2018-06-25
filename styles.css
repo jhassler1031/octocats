@@ -1,3 +1,5 @@
+/* ========================= General Items ========================= */
+
 * {
 -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -13,9 +15,11 @@ ul {
   list-style: none;
 }
 
-/* ================== Main List Items ====================*/
+/* ======================= Main List Items =========================*/
 
 .octodex {
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -23,13 +27,13 @@ ul {
   /* Using inline block here to make the main images show horizontally.  Setting width
   to control the size of the images. */
   display: inline-block;
-  width: 31%;
+  width: 31.75%;
   margin: 8px;
 }
 
 .octocat img {
   /* adding border around main image */
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 4px;
 }
 
@@ -39,7 +43,7 @@ ul {
 display: inline-block;
 width: 100%;
 padding-bottom: 15px;
-border-bottom: 2px solid lightgray;
+border-bottom: 1px solid lightgray;
 margin-top: 6px;
 }
 
