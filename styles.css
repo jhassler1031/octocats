@@ -40,8 +40,6 @@ ul {
 /* ===================== Footer of Main List Items =================== */
 
 .image-footer {
-display: inline-block;
-width: 100%;
 padding-bottom: 15px;
 border-bottom: 1px solid lightgray;
 margin-top: 6px;
@@ -49,8 +47,9 @@ margin-top: 6px;
 
 .image-number {
 color: gray;
-float: left;
-margin-top: 7px;
+/* float: left;
+margin-top: 7px; */
+vertical-align: middle;
 }
 
 .image-number::before {
@@ -61,7 +60,9 @@ margin-top: 7px;
 .image-caption {
 display: inline-block;
 color: gray;
-float: right;
+/* float: right; */
+vertical-align: middle;
+
 }
 
 .image-caption a {
