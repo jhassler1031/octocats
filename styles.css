@@ -2,6 +2,7 @@
 -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+font-family: helvetica, sans-serif;
 }
 
 img {
@@ -12,6 +13,8 @@ ul {
   list-style: none;
 }
 
+/* ================== Main List Items ====================*/
+
 .octodex {
 
 }
@@ -20,47 +23,67 @@ ul {
   /* Using inline block here to make the main images show horizontally.  Setting width
   to control the size of the images. */
   display: inline-block;
-  width: 33%;
+  width: 31%;
+  margin: 8px;
 }
 
 .octocat img {
   /* adding border around main image */
   border: 2px solid lightgray;
+  border-radius: 4px;
 }
+
+/* ===================== Footer of Main List Items =================== */
 
 .image-footer {
 display: inline-block;
 width: 100%;
-height: 100%;
-vertical-align: middle;
-/* Add bottom bar using border */
 padding-bottom: 15px;
 border-bottom: 2px solid lightgray;
+margin-top: 6px;
+}
+
+.image-number {
+color: gray;
+float: left;
+margin-top: 7px;
+}
+
+.image-number::before {
+  /* Add a # before the numer */
+  content: "#";
 }
 
 .image-caption {
 display: inline-block;
 color: gray;
+float: right;
 }
 
-.image-number {
-height: 100%;
-vertical-align: middle;
-color: gray;
+.image-caption a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 .authors {
 display: inline-block;
-
+padding: 0;
 }
 
 .authors a {
 width: 30px;
 display: inline-block;
+height: 100%;
+vertical-align: middle;
+
 }
 
 .authors img {
-  border-radius: 10px;
+  /* using border-radius to round the edges of the image */
+  border-radius: 6px;
+  /* setting border here to 0 to remove gray line inherited from octocat img style */
+  border: 0;
 }
 
 .authors li {
