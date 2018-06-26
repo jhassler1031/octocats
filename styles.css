@@ -43,13 +43,16 @@ ul {
 padding-bottom: 15px;
 border-bottom: 1px solid lightgray;
 margin-top: 6px;
+display: inline-block;
+width: 100%
+
 }
 
 .image-number {
 color: gray;
-/* float: left;
-margin-top: 7px; */
-vertical-align: middle;
+float: left;
+margin-top: 7px;
+/* vertical-align: middle; */
 }
 
 .image-number::before {
@@ -60,8 +63,8 @@ vertical-align: middle;
 .image-caption {
 display: inline-block;
 color: gray;
-/* float: right; */
-vertical-align: middle;
+float: right;
+/* vertical-align: middle; */
 
 }
 
