@@ -1,26 +1,32 @@
 /* ========================= General Items ========================= */
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
 * {
 -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-font-family: helvetica, sans-serif;
 }
 
+body {
+  font-family: "Titillium Web", helvetica, sans-serif;
+}
+
+/* make images take up the full size of their container */
 img {
   width: 100%;
 }
 
+/* removes dots from ul's and removes the default padding*/
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* ======================= Main List Items =========================*/
 
 .octodex {
-  padding: 0;
   margin: 0;
-
 }
 
 .octocat {
@@ -31,10 +37,29 @@ ul {
   margin: 8px;
 }
 
-.octocat img {
+.octocat>a {
+  display: inline-block;
+  position: relative;
   /* adding border around main image */
   border: 1px solid lightgray;
+  /* curves the edges of the img */
   border-radius: 4px;
+}
+
+.octocat>a::after {
+  /* creates the triangle */
+  content: "";
+
+  height: 0;
+  width: 0;
+
+  border-top: solid 10px lightgray;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+
+  position: absolute;
+  right: 2%;
+  top: 100%;
 }
 
 /* ===================== Footer of Main List Items =================== */
@@ -44,8 +69,7 @@ padding-bottom: 15px;
 border-bottom: 1px solid lightgray;
 margin-top: 6px;
 display: inline-block;
-width: 100%
-
+width: 100%;
 }
 
 .image-number {
